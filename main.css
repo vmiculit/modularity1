@@ -1,1 +1,8 @@
 /* ADD YOUR STYLES HERE */
+td, th {
+	padding: 10px;
+	padding-right: 68px;
+	border-bottom-style: solid;
+	border-bottom-color: gray;
+
+}
