@@ -19,7 +19,7 @@
 	    		<p class="instruction-text">Style a table full of data so that it looks nicer than the brower defaults.</p>
 					<div class="instruction-answer">
 						<!-- Edit here -->
-						<table>
+						<table class="data-table">
 							<tr>
 								<td>0</td>
 								<td>Sean</td>
@@ -33,10 +33,10 @@
 								<td>@metaraine</td>
 							</tr>
 							<tr>
-								<td>2</td>
-								<td>Matt</td>
-								<td>Null</td>
-								<td>@nullempire</td>
+								<td class="last_row">2</td>
+								<td class="last_row">Matt</td>
+								<td class="last_row">Null</td>
+								<td class="last_row">@nullempire</td>
 							</tr>
 						</table>
 				    <!-- End editable area -->
@@ -45,7 +45,7 @@
 	    		<p class="instruction-text">It should also handle header rows...</p>
 					<div class="instruction-answer">
 						<!-- Edit here -->
-						<table>
+						<table class="data-table">
 							<thead>
 								<tr>
 									<th>#</th>
@@ -68,10 +68,10 @@
 									<td>@metaraine</td>
 								</tr>
 								<tr>
-									<td>2</td>
-									<td>Matt</td>
-									<td>Null</td>
-									<td>@nullempire</td>
+									<td class="last_row">2</td>
+									<td class="last_row">Matt</td>
+									<td class="last_row">Null</td>
+									<td class="last_row">@nullempire</td>
 								</tr>
 							</tbody>
 						</table>
@@ -86,12 +86,12 @@
 	    		<p class="instruction-text">Three columns, three prominent numbers, three small labels</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<table>
+			    	<table class="stats-section">
 			    		<tbody>
 			    			<tr>
-			    				<td><div>7</div><div>followers</div></td>
-			    				<td><div>59</div><div>starred</div></td>
-			    				<td><div>28</div><div>following</div></td>
+			    				<td class="stats-cell"><div class="stats">7</div><div class="comment">followers</div></td>
+			    				<td class="stats-cell"><div class="stats">59</div><div class="comment">starred</div></td>
+			    				<td class="stats-cell"><div class="stats">28</div><div class="comment">following</div></td>
 			    			</tr>
 			    		</tbody>
 			    	</table>
@@ -105,46 +105,46 @@
 	    		<p class="instruction-text">Bar widths are set in the HTML as if they were populated from the back-end. Everything else should be styled with CSS.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<table>
+			    	<table class="bar-chart">
 			    		<tr>
-			    			<th>Javascript</th>
-			    			<td><div style="width: 99%">21%</div></td>
+			    			<th class="bar-title">Javascript</th>
+			    			<td class="bar-content"><div class="bar" style="width: 99%">21%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>Ruby</th>
-			    			<td><div style="width: 57.1%">12%</div></td>
+			    			<th class="bar-title">Ruby</th>
+			    			<td class="bar-content"><div class="bar" style="width: 57.1%">12%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>Java</th>
-			    			<td><div style="width: 38.1%">8%</div></td>
+			    			<th class="bar-title">Java</th>
+			    			<td class="bar-content"><div class="bar" style="width: 38.1%">8%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>Python</th>
-			    			<td><div style="width: 38.1%">8%</div></td>
+			    			<th class="bar-title">Python</th>
+			    			<td class="bar-content"><div class="bar" style="width: 38.1%">8%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>Shell</th>
-			    			<td><div style="width: 38.1%">8%</div></td>
+			    			<th class="bar-title">Shell</th>
+			    			<td class="bar-content"><div class="bar" style="width: 38.1%">8%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>PHP</th>
-			    			<td><div style="width: 33.3%">7%</div></td>
+			    			<th class="bar-title">PHP</th>
+			    			<td class="bar-content"><div class="bar" style="width: 33.3%">7%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>C</th>
-			    			<td><div style="width: 28.8%">6%</div></td>
+			    			<th class="bar-title">C</th>
+			    			<td class="bar-content"><div class="bar" style="width: 28.8%">6%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>C++</th>
-			    			<td><div style="width: 23.8%">5%</div></td>
+			    			<th class="bar-title">C++</th>
+			    			<td class="bar-content"><div class="bar" style="width: 23.8%">5%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>Perl</th>
-			    			<td><div style="width: 19.0%">4%</div></td>
+			    			<th class="bar-title">Perl</th>
+			    			<td class="bar-content"><div class="bar" style="width: 19.0%">4%</div></td>
 			    		</tr>
 			    		<tr>
-			    			<th>Objective-C</th>
-			    			<td><div style="width: 14.3%">3%</div></td>
+			    			<th class="bar-title">Objective-C</th>
+			    			<td class="bar-content"><div class="bar" style="width: 14.3%">3%</div></td>
 			    		</tr>
 			    	</table>
 				    <!-- End editable area -->
@@ -157,13 +157,13 @@
 	    		<p class="instruction-text">The lightbox should display arbitrary content, centered vertically and horizontally, with everything behind it (the rest of the page) darkened. It should obscure the entire screen, no matter where you are on the page. You may want to disable these styles when you're not actively working on them, otherwise they'll cover the whole page.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<div>
-			    		<div>
-				    		<div>
+			    	<div class="gray-box">
+			    		<div class="white-box">
+				    		<div class="content-box">
 					    		<h3>Hello</h3>
 						    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears. Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
-						    	<div>
-						    		<a href="#">Close</a>
+						    	<div class="button-align">
+						    		<a class="button" href="#">Close</a>
 						    	</div>
 				    		</div>
 				    	</div>
