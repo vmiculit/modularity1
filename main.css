@@ -63,13 +63,13 @@
 
 .gray-box {
 	background: gray;
-	height: 100vh;
+	/*height: 100vh;
 	width: 100vw;
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 0;*/
 	text-align: center;
-	line-height: 100vh;
+	/*line-height: 100vh;*/
 }
 
 .white-box {
@@ -99,12 +99,15 @@
 	text-align: right;
 }
 
+/*5. MEDIA BLOCK*/
+.media-box {
+	display: inline-block;
+}
+.media-box img{
+	float: left;
+	padding-right: 10px;
+}
 
-
-
-
-
-
-
-
-
+.media-content {
+	overflow: hidden;
+}
